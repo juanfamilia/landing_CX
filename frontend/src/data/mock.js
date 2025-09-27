@@ -82,7 +82,7 @@ export const siteData = {
       },
       {
         id: 4,
-        icon: "PresentationChart",
+        icon: "TrendingUp",
         title: "Insights estratégicos",
         description: "Dashboards ejecutivos con recomendaciones accionables."
       }

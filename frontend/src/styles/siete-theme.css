@@ -1,0 +1,229 @@
+/* Siete CX Theme - Based on Brand Colors */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand Colors from Siete CX Logo */
+  --siete-navy: #1f3d5c;
+  --siete-mint: #34a087;
+  --siete-green: #81d49f;
+  --siete-dark: #0f1419;
+  --siete-light: #f8fafc;
+  --siete-gray: #64748b;
+  --siete-gray-light: #e2e8f0;
+  
+  /* UI Colors */
+  --siete-bg-primary: var(--siete-dark);
+  --siete-bg-secondary: var(--siete-navy);
+  --siete-bg-accent: var(--siete-mint);
+  --siete-text-primary: var(--siete-light);
+  --siete-text-secondary: var(--siete-gray);
+  --siete-text-accent: var(--siete-green);
+  --siete-border: rgba(129, 212, 159, 0.2);
+}
+
+/* Typography System */
+.siete-display {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  color: var(--siete-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.siete-heading-1 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  color: var(--siete-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.siete-heading-2 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: var(--siete-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.siete-heading-3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.3;
+  color: var(--siete-text-primary);
+}
+
+.siete-body-large {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--siete-text-secondary);
+}
+
+.siete-body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--siete-text-secondary);
+}
+
+/* Button Styles */
+.siete-btn-primary {
+  background: linear-gradient(135deg, var(--siete-green), var(--siete-mint));
+  color: var(--siete-dark);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 48px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 20px rgba(129, 212, 159, 0.3);
+}
+
+.siete-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(129, 212, 159, 0.4);
+}
+
+.siete-btn-secondary {
+  background: transparent;
+  color: var(--siete-green);
+  border: 2px solid var(--siete-green);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 48px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.siete-btn-secondary:hover {
+  background: var(--siete-green);
+  color: var(--siete-dark);
+  transform: translateY(-1px);
+}
+
+/* Card Styles */
+.siete-card {
+  background: rgba(31, 61, 92, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--siete-border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.siete-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--siete-green);
+}
+
+/* Section Styles */
+.siete-section {
+  padding: 6rem 0;
+}
+
+.siete-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Navigation */
+.siete-nav-link {
+  color: var(--siete-text-primary);
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.siete-nav-link:hover {
+  color: var(--siete-green);
+}
+
+.siete-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--siete-green);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.siete-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.siete-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--siete-dark) 0%, var(--siete-navy) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.siete-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(129, 212, 159, 0.1), transparent 50%);
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .siete-container {
+    padding: 0 1rem;
+  }
+  
+  .siete-section {
+    padding: 4rem 0;
+  }
+  
+  .siete-card {
+    padding: 1.5rem;
+  }
+  
+  .siete-btn-primary,
+  .siete-btn-secondary {
+    width: 100%;
+    min-height: 52px;
+  }
+}

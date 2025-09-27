@@ -43,13 +43,13 @@ export const siteData = {
       },
       {
         id: 3,
-        icon: "Brain",
+        icon: "Lightbulb",
         title: "Inteligencia accionable",
         description: "IA + marco McKinsey/Bain para estrategias que funcionan."
       },
       {
         id: 4,
-        icon: "Scaling",
+        icon: "Maximize2",
         title: "Flexibilidad total",
         description: "Adaptable a cualquier sector, tamaño y necesidad específica."
       }

@@ -64,11 +64,17 @@ const Icon = ({ name, className = "w-6 h-6" }) => {
 };
 
 const SieteCXLanding = () => {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openDemoModal = () => {
+    setIsDemoModalOpen(true);
   };
 
   return (

@@ -375,7 +375,10 @@ const SieteCXLanding = () => {
             </motion.div>
             
             <motion.div variants={fadeInUp}>
-              <Button className="siete-btn-primary text-lg px-8 py-4">
+              <Button 
+                className="siete-btn-primary text-lg px-8 py-4"
+                onClick={openDemoModal}
+              >
                 <Icon name="Calendar" className="w-5 h-5" />
                 {siteData.finalCta.cta}
               </Button>

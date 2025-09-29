@@ -421,7 +421,7 @@ const SieteCXLanding = () => {
             >
               {siteData.finalCta.features.map((feature, index) => (
                 <div key={index} className="flex items-center justify-center space-x-4">
-                  <Icon name="CheckCircle" className="w-8 h-8" style={{ color: '#16a34a' }} />
+                  <Icon name="CheckCircle" className="w-8 h-8 text-green-500" style={{ color: '#16a34a !important' }} />
                   <span className="text-xl font-bold" style={{ color: '#2563eb', fontWeight: '800' }}>
                     {feature}
                   </span>

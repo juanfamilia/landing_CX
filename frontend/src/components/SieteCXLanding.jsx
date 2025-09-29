@@ -373,20 +373,20 @@ const SieteCXLanding = () => {
           <Card className="siete-card max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <Icon name="Quote" className="w-12 h-12 text-siete-green mx-auto mb-6" />
-              <blockquote className="text-2xl md:text-3xl mb-8 italic text-white font-medium leading-relaxed">
+              <blockquote className="text-2xl md:text-3xl mb-8 italic font-bold leading-relaxed" style={{ color: '#2563eb', fontWeight: '700' }}>
                 "{siteData.testimonial.quote}"
               </blockquote>
             </div>
             <div className="flex items-center justify-center space-x-4">
-              <div className="w-16 h-16 bg-gradient-to-r from-siete-green to-siete-mint rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold text-siete-dark">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold text-white">
                   {siteData.testimonial.author.charAt(0)}
                 </span>
               </div>
               <div className="text-left">
-                <div className="font-semibold text-white text-lg">{siteData.testimonial.author}</div>
-                <div className="text-gray-300 font-medium">{siteData.testimonial.role}</div>
-                <div className="text-siete-green font-semibold">{siteData.testimonial.company}</div>
+                <div className="font-bold text-lg" style={{ color: '#2563eb', fontWeight: '700' }}>{siteData.testimonial.author}</div>
+                <div className="font-semibold" style={{ color: '#3b82f6', fontWeight: '600' }}>{siteData.testimonial.role}</div>
+                <div className="font-semibold" style={{ color: '#16a34a', fontWeight: '600' }}>{siteData.testimonial.company}</div>
               </div>
             </div>
           </Card>

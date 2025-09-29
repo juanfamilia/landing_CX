@@ -229,14 +229,14 @@ const DemoModal = ({ isOpen, onClose }) => {
                   </div>
 
                   <div className="flex justify-end">
-                    <Button
+                    <button
                       type="button"
                       onClick={() => setCurrentStep(2)}
-                      className="siete-btn-primary"
                       disabled={!formData.name || !formData.email || !formData.company || !formData.sector}
+                      className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg font-bold rounded-full hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
                     >
                       Continuar
-                    </Button>
+                    </button>
                   </div>
                 </motion.div>
               )}

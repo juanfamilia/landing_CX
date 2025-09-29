@@ -353,9 +353,9 @@ const SieteCXLanding = () => {
                   <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-siete-mint to-siete-green rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Icon name={industry.icon} className="w-10 h-10 text-siete-dark" />
                   </div>
-                  <h3 className="siete-heading-3 mb-4">{industry.title}</h3>
-                  <p className="siete-body text-siete-text-secondary mb-4">{industry.description}</p>
-                  <div className="text-siete-green font-semibold">{industry.stats}</div>
+                  <h3 className="siete-heading-3 mb-4 text-white font-semibold">{industry.title}</h3>
+                  <p className="text-gray-200 font-medium leading-relaxed mb-4">{industry.description}</p>
+                  <div className="text-siete-green font-bold text-lg">{industry.stats}</div>
                 </Card>
               </motion.div>
             ))}

@@ -83,7 +83,7 @@ const SieteCXLanding = () => {
   return (
     <div className="min-h-screen bg-siete-dark text-siete-text-primary">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-siete-dark/80 backdrop-blur-lg border-b border-siete-border z-50">
+      <nav className="fixed top-0 w-full bg-siete-dark/95 backdrop-blur-lg border-b border-siete-border z-50">
         <div className="siete-container">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-4">
@@ -94,6 +94,7 @@ const SieteCXLanding = () => {
               />
             </div>
             
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {siteData.navigation.links.map((link) => (
                 <button
@@ -106,13 +107,55 @@ const SieteCXLanding = () => {
               ))}
             </div>
             
-            <Button 
-              className="siete-btn-primary hidden md:inline-flex"
-              onClick={openDemoModal}
-            >
-              {siteData.hero.cta.primary}
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button 
+                className="siete-btn-primary hidden md:inline-flex"
+                onClick={openDemoModal}
+              >
+                {siteData.hero.cta.primary}
+              </Button>
+              
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden w-10 h-10 bg-siete-navy/50 rounded-lg flex items-center justify-center hover:bg-siete-green/20 transition-colors"
+              >
+                <Icon name={isMobileMenuOpen ? "X" : "Menu"} className="w-5 h-5 text-siete-green" />
+              </button>
+            </div>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="md:hidden border-t border-siete-border bg-siete-dark/95 backdrop-blur-lg"
+              >
+                <div className="py-4 space-y-2">
+                  {siteData.navigation.links.map((link) => (
+                    <button
+                      key={link.id}
+                      onClick={() => scrollToSection(link.href)}
+                      className="w-full text-left px-4 py-3 text-siete-text-primary hover:bg-siete-green/10 hover:text-siete-green transition-colors"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                  <div className="px-4 pt-4">
+                    <Button 
+                      className="siete-btn-primary w-full"
+                      onClick={openDemoModal}
+                    >
+                      {siteData.hero.cta.primary}
+                    </Button>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
 

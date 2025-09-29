@@ -8,15 +8,16 @@
   --siete-green: #81d49f;
   --siete-dark: #0f1419;
   --siete-light: #f8fafc;
-  --siete-gray: #64748b;
+  --siete-gray: #94a3b8;
   --siete-gray-light: #e2e8f0;
   
-  /* UI Colors */
+  /* UI Colors - Improved Contrast */
   --siete-bg-primary: var(--siete-dark);
   --siete-bg-secondary: var(--siete-navy);
   --siete-bg-accent: var(--siete-mint);
-  --siete-text-primary: var(--siete-light);
-  --siete-text-secondary: var(--siete-gray);
+  --siete-text-primary: #ffffff;
+  --siete-text-secondary: #e2e8f0;
+  --siete-text-muted: #cbd5e1;
   --siete-text-accent: var(--siete-green);
   --siete-border: rgba(129, 212, 159, 0.2);
 }

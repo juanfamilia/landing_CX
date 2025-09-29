@@ -404,19 +404,22 @@ const SieteCXLanding = () => {
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="text-xl text-gray-200 font-medium leading-relaxed mb-8"
+              className="text-2xl text-white font-semibold leading-relaxed mb-8"
+              style={{ color: '#ffffff', fontWeight: '600' }}
             >
               {siteData.finalCta.subtitle}
             </motion.p>
             
             <motion.div 
               variants={fadeInUp}
-              className="space-y-4 mb-8"
+              className="space-y-6 mb-8"
             >
               {siteData.finalCta.features.map((feature, index) => (
-                <div key={index} className="flex items-center justify-center space-x-3">
-                  <Icon name="CheckCircle" className="w-6 h-6 text-siete-green" />
-                  <span className="text-lg text-white font-medium">{feature}</span>
+                <div key={index} className="flex items-center justify-center space-x-4">
+                  <Icon name="CheckCircle" className="w-8 h-8 text-siete-green" />
+                  <span className="text-xl text-white font-bold" style={{ color: '#ffffff', fontWeight: '700' }}>
+                    {feature}
+                  </span>
                 </div>
               ))}
             </motion.div>

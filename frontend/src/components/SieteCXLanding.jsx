@@ -452,17 +452,17 @@ const SieteCXLanding = () => {
                 alt={siteData.navigation.logo.alt}
                 className="h-8 w-auto mb-4"
               />
-              <p className="text-gray-300 font-medium">
+              <p className="font-semibold" style={{ color: '#60a5fa', fontWeight: '600' }}>
                 {siteData.footer.copyright}
               </p>
             </div>
             
             <div className="text-center">
               <div className="space-y-2">
-                <a href={`mailto:${siteData.footer.links.contact}`} className="text-lg text-siete-green hover:text-siete-mint transition-colors font-medium">
+                <a href={`mailto:${siteData.footer.links.contact}`} className="text-lg font-bold hover:text-blue-400 transition-colors" style={{ color: '#3b82f6', fontWeight: '700' }}>
                   {siteData.footer.links.contact}
                 </a>
-                <div className="text-gray-300 font-medium">
+                <div className="font-semibold" style={{ color: '#60a5fa', fontWeight: '600' }}>
                   {siteData.footer.links.phone}
                 </div>
               </div>

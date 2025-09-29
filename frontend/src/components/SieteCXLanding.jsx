@@ -65,16 +65,19 @@ const Icon = ({ name, className = "w-6 h-6" }) => {
 
 const SieteCXLanding = () => {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
 
   const openDemoModal = () => {
     setIsDemoModalOpen(true);
+    setIsMobileMenuOpen(false); // Close mobile menu when opening demo
   };
 
   return (

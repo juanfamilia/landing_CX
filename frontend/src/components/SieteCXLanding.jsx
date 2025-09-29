@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import * as LucideIcons from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
+import DemoModal from './DemoModal';
 import '../styles/siete-theme.css';
 import { siteData } from '../data/mock';
 

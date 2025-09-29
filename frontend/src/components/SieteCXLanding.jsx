@@ -444,17 +444,17 @@ const SieteCXLanding = () => {
                 alt={siteData.navigation.logo.alt}
                 className="h-8 w-auto mb-4"
               />
-              <p className="siete-body text-siete-text-secondary">
+              <p className="text-gray-300 font-medium">
                 {siteData.footer.copyright}
               </p>
             </div>
             
             <div className="text-center">
               <div className="space-y-2">
-                <a href={`mailto:${siteData.footer.links.contact}`} className="siete-body text-siete-green hover:text-siete-mint transition-colors">
+                <a href={`mailto:${siteData.footer.links.contact}`} className="text-lg text-siete-green hover:text-siete-mint transition-colors font-medium">
                   {siteData.footer.links.contact}
                 </a>
-                <div className="siete-body text-siete-text-secondary">
+                <div className="text-gray-300 font-medium">
                   {siteData.footer.links.phone}
                 </div>
               </div>

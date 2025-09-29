@@ -369,7 +369,7 @@ const SieteCXLanding = () => {
           <Card className="siete-card max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <Icon name="Quote" className="w-12 h-12 text-siete-green mx-auto mb-6" />
-              <blockquote className="siete-heading-3 mb-8 italic">
+              <blockquote className="text-2xl md:text-3xl mb-8 italic text-white font-medium leading-relaxed">
                 "{siteData.testimonial.quote}"
               </blockquote>
             </div>
@@ -380,9 +380,9 @@ const SieteCXLanding = () => {
                 </span>
               </div>
               <div className="text-left">
-                <div className="font-semibold text-siete-text-primary">{siteData.testimonial.author}</div>
-                <div className="text-siete-text-secondary">{siteData.testimonial.role}</div>
-                <div className="text-siete-green">{siteData.testimonial.company}</div>
+                <div className="font-semibold text-white text-lg">{siteData.testimonial.author}</div>
+                <div className="text-gray-300 font-medium">{siteData.testimonial.role}</div>
+                <div className="text-siete-green font-semibold">{siteData.testimonial.company}</div>
               </div>
             </div>
           </Card>

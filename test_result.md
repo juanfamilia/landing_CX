@@ -149,6 +149,9 @@ frontend:
       - working: true
         agent: "testing"
         comment: "✅ PASSED: All CTA buttons working correctly. Found 2 'Solicitar demo' buttons, 1 'Ver cómo funciona' button, and 1 'Agendar demo ahora' button. All buttons successfully open the demo modal with proper functionality."
+      - working: true
+        agent: "testing"
+        comment: "✅ PRUEBA ESPECÍFICA COMPLETADA: Verificación detallada según requerimientos del usuario. APERTURA: 3/3 botones CTA funcionando (hero, navegación, CTA final). CONTENIDO: Título visible, pasos 1-2 mostrados, campos legibles. PASO 1: Todos los campos funcionales con etiquetas visibles y validación correcta. PASO 2: 6 horarios seleccionables, botones Atrás/Confirmar funcionales. FUNCIONALIDADES: Envío exitoso con alert, cierre por click fuera funcional, validación de campos requeridos. CONTRASTE: Textos blancos/alto contraste, etiquetas visibles, botones contrastados. TODAS LAS ESPECIFICACIONES CUMPLIDAS."
 
   - task: "Modal Two-Step Form"
     implemented: true

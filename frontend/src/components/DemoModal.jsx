@@ -79,7 +79,7 @@ const DemoModal = ({ isOpen, onClose }) => {
           className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto"
           onClick={(e) => e.stopPropagation()}
         >
-          <Card className="siete-card p-8">
+          <div className="bg-slate-900 border border-gray-700 rounded-2xl p-8 shadow-2xl">
             {/* Header */}
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center space-x-3">

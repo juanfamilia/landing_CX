@@ -334,12 +334,14 @@ const SieteCXLanding = () => {
             <motion.h2 
               variants={fadeInUp}
               className="siete-heading-1 mb-6"
+              style={{ color: '#3b82f6', fontWeight: '900' }}
             >
               {siteData.sectors.title}
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="subtitle-enhanced max-w-3xl mx-auto text-lg"
+              className="text-2xl font-semibold max-w-3xl mx-auto leading-relaxed"
+              style={{ color: '#60a5fa', fontWeight: '600' }}
             >
               {siteData.sectors.subtitle}
             </motion.p>

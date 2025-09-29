@@ -167,6 +167,9 @@ frontend:
       - working: true
         agent: "testing"
         comment: "✅ PASSED: Complete two-step form working perfectly. Step 1: All form fields present (name, email, company, phone, sector, message). Step 2: Time slot selection working. Form validation working (Continue button disabled until required fields filled). Mock submission successful with console log confirmation. Modal closes after submission and can be closed by clicking outside."
+      - working: true
+        agent: "testing"
+        comment: "✅ PRUEBA ESPECÍFICA DETALLADA COMPLETADA: PASO 1 - Campos nombre, email, empresa, teléfono (funcionales), sector dropdown (8 opciones), mensaje textarea (funcional), etiquetas con alto contraste visible, validación correcta (Continuar deshabilitado hasta completar campos requeridos). PASO 2 - 6 horarios disponibles y seleccionables, botón Atrás funcional para regresar al paso 1, botón Confirmar Demo habilitado solo con horario seleccionado, descripción del contenido de la demo visible. ENVÍO - Formulario enviado exitosamente con alert de confirmación y console log, modal se cierra automáticamente. CIERRE - Click fuera del modal funcional, botón X visible en esquina superior derecha. VALIDACIÓN COMPLETA EXITOSA."
 
   - task: "Navigation Link Contrast"
     implemented: true

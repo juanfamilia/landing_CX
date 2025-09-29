@@ -424,6 +424,12 @@ const SieteCXLanding = () => {
           </div>
         </div>
       </footer>
+
+      {/* Demo Modal */}
+      <DemoModal 
+        isOpen={isDemoModalOpen} 
+        onClose={() => setIsDemoModalOpen(false)} 
+      />
     </div>
   );
 };

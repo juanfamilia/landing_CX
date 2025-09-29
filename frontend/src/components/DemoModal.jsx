@@ -319,7 +319,7 @@ const DemoModal = ({ isOpen, onClose }) => {
                 </motion.div>
               )}
             </form>
-          </Card>
+          </div>
         </motion.div>
       </motion.div>
     </AnimatePresence>

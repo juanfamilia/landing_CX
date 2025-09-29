@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Calendar, Clock, User, Mail, Phone, Building2 } from 'lucide-react';
-import { Button } from './ui/button';
-import { Card } from './ui/card';
+import { X, Calendar, Clock, User, Mail, Phone, Building2, CheckCircle } from 'lucide-react';
 
 const DemoModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({

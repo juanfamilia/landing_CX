@@ -403,13 +403,14 @@ const SieteCXLanding = () => {
             <motion.h2 
               variants={fadeInUp}
               className="siete-heading-1 mb-6"
+              style={{ color: '#3b82f6', fontWeight: '900' }}
             >
               {siteData.finalCta.title}
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="text-2xl text-white font-semibold leading-relaxed mb-8"
-              style={{ color: '#ffffff', fontWeight: '600' }}
+              className="text-2xl font-bold leading-relaxed mb-8"
+              style={{ color: '#60a5fa', fontWeight: '700' }}
             >
               {siteData.finalCta.subtitle}
             </motion.p>
@@ -420,8 +421,8 @@ const SieteCXLanding = () => {
             >
               {siteData.finalCta.features.map((feature, index) => (
                 <div key={index} className="flex items-center justify-center space-x-4">
-                  <Icon name="CheckCircle" className="w-8 h-8 text-siete-green" />
-                  <span className="text-xl text-white font-bold" style={{ color: '#ffffff', fontWeight: '700' }}>
+                  <Icon name="CheckCircle" className="w-8 h-8" style={{ color: '#16a34a' }} />
+                  <span className="text-xl font-bold" style={{ color: '#2563eb', fontWeight: '800' }}>
                     {feature}
                   </span>
                 </div>

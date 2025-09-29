@@ -147,12 +147,12 @@
   background: rgba(31, 61, 92, 1);
 }
 
-.siete-card h3 {
+.siete-card h3:not(.force-blue-card-title) {
   color: #ffffff !important;
   font-weight: 600 !important;
 }
 
-.siete-card p {
+.siete-card p:not(.force-blue-text) {
   color: var(--siete-text-secondary) !important;
   font-weight: 500 !important;
 }

@@ -95,9 +95,9 @@ const DemoModal = ({ isOpen, onClose }) => {
               </div>
               <button
                 onClick={onClose}
-                className="w-10 h-10 bg-siete-navy/50 rounded-lg flex items-center justify-center hover:bg-siete-green/20 transition-colors"
+                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors"
               >
-                <X className="w-5 h-5 text-siete-green" />
+                <X className="w-5 h-5 text-white" />
               </button>
             </div>
 

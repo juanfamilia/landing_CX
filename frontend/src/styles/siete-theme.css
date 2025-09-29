@@ -148,12 +148,13 @@
 }
 
 .siete-card h3 {
-  color: var(--siete-text-primary) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
 .siete-card p {
-  color: var(--siete-text-primary) !important;
-  opacity: 0.85;
+  color: var(--siete-text-secondary) !important;
+  font-weight: 500 !important;
 }
 
 /* Section Styles */

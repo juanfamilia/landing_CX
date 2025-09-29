@@ -146,8 +146,8 @@ const DemoModal = ({ isOpen, onClose }) => {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-siete-text-primary mb-2">
-                        <Mail className="w-4 h-4 inline mr-2" />
+                      <label className="block text-lg font-bold text-white mb-3">
+                        <Mail className="w-5 h-5 inline mr-2" />
                         Email corporativo *
                       </label>
                       <input
@@ -156,7 +156,7 @@ const DemoModal = ({ isOpen, onClose }) => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-siete-navy/50 border border-siete-border rounded-lg text-siete-text-primary placeholder-siete-text-secondary focus:border-siete-green focus:ring-1 focus:ring-siete-green focus:outline-none"
+                        className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-600 rounded-lg text-white text-lg placeholder-gray-400 focus:border-green-400 focus:ring-2 focus:ring-green-400 focus:outline-none"
                         placeholder="tu.email@empresa.com"
                       />
                     </div>

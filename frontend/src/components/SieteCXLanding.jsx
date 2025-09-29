@@ -462,7 +462,7 @@ const SieteCXLanding = () => {
                 <a href={`mailto:${siteData.footer.links.contact}`} className="text-lg font-bold hover:text-blue-400 transition-colors" style={{ color: '#3b82f6', fontWeight: '700' }}>
                   {siteData.footer.links.contact}
                 </a>
-                <div className="font-semibold" style={{ color: '#60a5fa', fontWeight: '600' }}>
+                <div className="text-lg font-semibold" style={{ color: '#60a5fa !important', fontWeight: '600' }}>
                   {siteData.footer.links.phone}
                 </div>
               </div>

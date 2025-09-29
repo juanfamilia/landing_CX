@@ -229,6 +229,31 @@
   pointer-events: none;
 }
 
+/* Mobile Navigation Improvements */
+.mobile-nav-item {
+  color: var(--siete-text-primary) !important;
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-item:hover {
+  background: rgba(129, 212, 159, 0.1) !important;
+  color: var(--siete-green) !important;
+}
+
+/* Text Contrast Improvements */
+.text-contrast-high {
+  color: var(--siete-text-primary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle-enhanced {
+  color: var(--siete-text-primary) !important;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .siete-container {
@@ -247,5 +272,17 @@
   .siete-btn-secondary {
     width: 100%;
     min-height: 52px;
+  }
+
+  .siete-display {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .siete-heading-1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .siete-body-large {
+    font-size: clamp(1.125rem, 3vw, 1.375rem);
   }
 }

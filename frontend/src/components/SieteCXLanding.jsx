@@ -105,7 +105,7 @@ const SieteCXLanding = () => {
             
             <Button 
               className="siete-btn-primary hidden md:inline-flex"
-              onClick={() => scrollToSection('#cta')}
+              onClick={openDemoModal}
             >
               {siteData.hero.cta.primary}
             </Button>

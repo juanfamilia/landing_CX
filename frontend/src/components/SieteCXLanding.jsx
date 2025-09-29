@@ -178,7 +178,8 @@ const SieteCXLanding = () => {
               
               <motion.p 
                 variants={fadeInUp}
-                className="siete-body-large max-w-2xl"
+                className="text-xl md:text-2xl font-medium text-white max-w-2xl leading-relaxed"
+                style={{ color: '#f8fafc', opacity: 1 }}
               >
                 {siteData.hero.subheadline}
               </motion.p>

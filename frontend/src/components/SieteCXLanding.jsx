@@ -143,7 +143,7 @@ const SieteCXLanding = () => {
               >
                 <Button 
                   className="siete-btn-primary"
-                  onClick={() => scrollToSection('#cta')}
+                  onClick={openDemoModal}
                 >
                   <Icon name="Play" className="w-5 h-5" />
                   {siteData.hero.cta.primary}

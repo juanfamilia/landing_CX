@@ -83,12 +83,12 @@ const DemoModal = ({ isOpen, onClose }) => {
             {/* Header */}
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-siete-green to-siete-mint rounded-xl flex items-center justify-center">
-                  <Calendar className="w-6 h-6 text-siete-dark" />
+                <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-green-600 rounded-xl flex items-center justify-center">
+                  <Calendar className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="siete-heading-3">Agendar Demo Personalizada</h2>
-                  <p className="siete-body text-siete-text-secondary">
+                  <h2 className="text-3xl font-bold text-white">Agendar Demo Personalizada</h2>
+                  <p className="text-lg text-gray-300 font-medium">
                     30 minutos que pueden transformar tu CX
                   </p>
                 </div>

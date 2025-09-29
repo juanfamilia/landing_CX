@@ -300,21 +300,21 @@ const DemoModal = ({ isOpen, onClose }) => {
                   </div>
 
                   <div className="flex justify-between">
-                    <Button
+                    <button
                       type="button"
                       onClick={() => setCurrentStep(1)}
-                      className="siete-btn-secondary"
+                      className="px-6 py-3 bg-gray-700 text-white text-lg font-semibold rounded-full hover:bg-gray-600 transition-colors"
                     >
                       Atrás
-                    </Button>
-                    <Button
+                    </button>
+                    <button
                       type="submit"
-                      className="siete-btn-primary"
                       disabled={!formData.preferredTime}
+                      className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg font-bold rounded-full hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 flex items-center gap-2"
                     >
-                      <Calendar className="w-4 h-4 mr-2" />
+                      <Calendar className="w-5 h-5" />
                       Confirmar Demo
-                    </Button>
+                    </button>
                   </div>
                 </motion.div>
               )}

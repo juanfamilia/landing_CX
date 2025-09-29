@@ -302,8 +302,8 @@ const SieteCXLanding = () => {
                     </div>
                     <Icon name={step.icon} className="w-8 h-8 text-siete-green" />
                   </div>
-                  <h3 className="siete-heading-2 mb-4 text-white font-bold">{step.title}</h3>
-                  <p className="text-xl text-gray-200 font-medium leading-relaxed">{step.description}</p>
+                  <h3 className="siete-heading-2 mb-4 font-bold" style={{ color: '#2563eb', fontWeight: '800' }}>{step.title}</h3>
+                  <p className="text-xl font-semibold leading-relaxed" style={{ color: '#3b82f6', fontWeight: '600' }}>{step.description}</p>
                 </div>
                 
                 {step.image && (

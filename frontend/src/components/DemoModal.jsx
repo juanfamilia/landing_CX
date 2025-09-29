@@ -103,22 +103,22 @@ const DemoModal = ({ isOpen, onClose }) => {
 
             {/* Progress Steps */}
             <div className="flex items-center mb-8">
-              <div className={`flex items-center ${currentStep >= 1 ? 'text-siete-green' : 'text-siete-text-secondary'}`}>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
-                  currentStep >= 1 ? 'bg-siete-green text-siete-dark' : 'bg-siete-navy text-white'
+              <div className={`flex items-center ${currentStep >= 1 ? 'text-green-400' : 'text-gray-400'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold ${
+                  currentStep >= 1 ? 'bg-green-500 text-white' : 'bg-gray-600 text-white'
                 }`}>
                   1
                 </div>
-                <span className="ml-2 text-sm">Información</span>
+                <span className="ml-3 text-lg font-semibold">Información</span>
               </div>
-              <div className="flex-1 h-px bg-siete-border mx-4"></div>
-              <div className={`flex items-center ${currentStep >= 2 ? 'text-siete-green' : 'text-siete-text-secondary'}`}>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
-                  currentStep >= 2 ? 'bg-siete-green text-siete-dark' : 'bg-siete-navy text-white'
+              <div className="flex-1 h-px bg-gray-600 mx-4"></div>
+              <div className={`flex items-center ${currentStep >= 2 ? 'text-green-400' : 'text-gray-400'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold ${
+                  currentStep >= 2 ? 'bg-green-500 text-white' : 'bg-gray-600 text-white'
                 }`}>
                   2
                 </div>
-                <span className="ml-2 text-sm">Horario</span>
+                <span className="ml-3 text-lg font-semibold">Horario</span>
               </div>
             </div>
 

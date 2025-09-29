@@ -249,9 +249,9 @@
 }
 
 .subtitle-enhanced {
-  color: var(--siete-text-primary) !important;
-  opacity: 0.9;
+  color: var(--siete-text-secondary) !important;
   font-weight: 500;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem) !important;
 }
 
 /* Responsive Design */

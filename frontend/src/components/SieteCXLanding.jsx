@@ -277,7 +277,7 @@ const SieteCXLanding = () => {
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="siete-body-large max-w-3xl mx-auto"
+              className="subtitle-enhanced max-w-3xl mx-auto text-lg"
             >
               {siteData.process.subtitle}
             </motion.p>

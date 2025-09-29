@@ -160,7 +160,7 @@
 
 /* Navigation */
 .siete-nav-link {
-  color: var(--siete-text-primary);
+  color: var(--siete-text-primary) !important;
   text-decoration: none;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 1rem;
@@ -168,10 +168,20 @@
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;
   position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .siete-nav-link:hover {
-  color: var(--siete-green);
+  color: var(--siete-green) !important;
+  background: rgba(129, 212, 159, 0.1);
+  border-radius: 0.5rem;
+}
+
+.siete-nav-link:focus {
+  color: var(--siete-green) !important;
+  background: rgba(129, 212, 159, 0.15);
 }
 
 .siete-nav-link::after {
@@ -187,7 +197,7 @@
 }
 
 .siete-nav-link:hover::after {
-  width: 100%;
+  width: 80%;
 }
 
 /* Hero Section */

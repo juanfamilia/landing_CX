@@ -243,6 +243,18 @@
 }
 
 /* Force Blue Colors for Lower Sections */
+.siete-card .force-blue-card-title,
+.force-blue-card-title {
+  color: #2563eb !important;
+  font-weight: 800 !important;
+}
+
+.siete-card .force-blue-text,
+.force-blue-text {
+  color: #3b82f6 !important;
+  font-weight: 600 !important;
+}
+
 .force-blue-title {
   color: #3b82f6 !important;
   font-weight: 900 !important;
@@ -250,16 +262,6 @@
 
 .force-blue-subtitle {
   color: #60a5fa !important;
-  font-weight: 600 !important;
-}
-
-.force-blue-card-title {
-  color: #2563eb !important;
-  font-weight: 800 !important;
-}
-
-.force-blue-text {
-  color: #3b82f6 !important;
   font-weight: 600 !important;
 }
 

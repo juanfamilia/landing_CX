@@ -106,6 +106,11 @@ vercel --prod
 - Verificar que las extensiones `.jsx` estén correctas
 - Confirmar rutas relativas en imports
 
+### Si aparece error "host not allowed":
+- El archivo `vite.config.js` ya incluye `allowedHosts` para Emergent
+- Configuración incluye: `premium-cx.preview.emergentagent.com`
+- Reiniciar servidor de desarrollo: `yarn dev`
+
 ### Si falla el deploy en Vercel:
 - Verificar que `vercel.json` esté en el root del frontend
 - Confirmar variables de entorno en Vercel Dashboard

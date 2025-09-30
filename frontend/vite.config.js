@@ -13,6 +13,12 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true,
+    allowedHosts: [
+      'premium-cx.preview.emergentagent.com',
+      'localhost',
+      '127.0.0.1',
+      '0.0.0.0'
+    ],
   },
   build: {
     outDir: 'build',
